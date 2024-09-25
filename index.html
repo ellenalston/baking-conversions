@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baking Conversions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header-container">
+        <img src="baking-images/baking-scale.png" alt="Left Image" class="side-image">
+        <h1>Baking Conversion Tool</h1>
+        <img src="baking-images/liquid-measurer.png" alt="Right Image" class="side-image">
+      </div> 
+  <div class="container">
+    <div class="input-group">
+      <label for="amount">Enter amount:</label>
+      <input type="number" id="amount" placeholder="Enter value">
+    </div>
+
+    <div class="input-group">
+      <label for="from-unit">From:</label>
+      <select id="from-unit">
+        <option value="ounces">Ounces</option>
+        <option value="milliliters">Milliliters</option>
+        <option value="cups">Cups</option>
+        <option value="tablespoons">Tablespoons</option>
+        <option value="teaspoons">Teaspoons</option>
+      </select>
+    </div>
+
+    <div class="input-group">
+      <label for="to-unit">To:</label>
+      <select id="to-unit">
+        <option value="ounces">Ounces</option>
+        <option value="milliliters">Milliliters</option>
+        <option value="cups">Cups</option>
+        <option value="tablespoons">Tablespoons</option>
+        <option value="teaspoons">Teaspoons</option>
+      </select>
+    </div>
+
+    <button onclick="convert()">Convert</button>
+    
+    <p id="result"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
